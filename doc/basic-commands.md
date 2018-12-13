@@ -127,3 +127,11 @@
 * `$ awk '//{print}' /etc/hosts` <- print the output of host file
 * `$ awk '/localhost/{print} /etc/hosts` <- extract the *lines* that contain localhost
 * `$ awk '/[0-9]/{print}' /etc/hosts` <- extract the *lines* containing numbers ([0-9])
+
+## Using SED
+
+### *Description* `sed` is a stream editor. A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline). [sed](https://www.gnu.org/software/sed/manual/sed.html)
+
+* `$ sed -n '5,10p` file` <- read lines 5-10 in file
+* `$ sed '20, 30d' file` <- output everything *except* lines 20-30
+* `$ sed 's/home/house/g' /etc/passwd` <- _switch_ every match for home with house
