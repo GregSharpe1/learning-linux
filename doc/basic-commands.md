@@ -13,39 +13,39 @@
 
 ## Domain and hostname setup
 
-* ```$ vi /etc/sysconfig/network``` -> add line equal to: HOSTNAME=example.hostname
-* ```$ vi /etc/hosts```
-* ```$ /etc/init.d/network restart```
+* `$ vi /etc/sysconfig/network` -> add line equal to: HOSTNAME=example.hostname
+* `$ vi /etc/hosts`
+* `$ /etc/init.d/network restart`
 
 ## Find
 
 ### definition: Command used to locate/find a file/directory within your system.
 
-* ```$ find . -name "test"``` - find the test FILE within the current directory (hence the ".")
-* ```$ find dir-location -type f -empty``` - find any empty files within <dir-location>
+* `$ find . -name "test"` - find the test FILE within the current directory (hence the ".")
+* `$ find dir-location -type f -empty` - find any empty files within <dir-location>
 
 ## Archiving & Compression tools
 
 ### definition: group together a set of files/directories
 
-* ```$ tar czf myfiles.tar.gz filename[1-5]``` - compress filename[1-5] using arguements c (create tar archieve) z (process archieve through gzip) f (file)
-* ```$ tar cjf myfiles.tar.bz2 filename[1-5]``` - compress files using b arguemnts (using bzip2)
-* ```$ tar cJf myfiles.tar.xz filename[1-5]``` - compress files using b arguemnts (using LZMA compression)
-* ```$ tar tvf myfiles.tar.gz``` - view what's within compressed tar.gz file
+* `$ tar czf myfiles.tar.gz filename[1-5]` - compress filename[1-5] using arguements c (create tar archieve) z (process archieve through gzip) f (file)
+* $ tar cjf myfiles.tar.bz2 filename[1-5]` - compress files using b arguemnts (using bzip2)
+* `$ tar cJf myfiles.tar.xz filename[1-5]` - compress files using b arguemnts (using LZMA compression)
+* `$ tar tvf myfiles.tar.gz` - view what's within compressed tar.gz file
 
 ## Decompressing
 
-* ```$ gzip -d "filename".tar.gz```
-* ```$ bzip2 -d "filename".tar.bz2```
-* ```$ xz -d "filename".tar.xz```
+* `$ gzip -d "filename".tar.gz`
+* `$ bzip2 -d "filename".tar.bz2`
+* `$ xz -d "filename".tar.xz`
 * notes: smallest compression method is gz (czf)
 * links used: https://en.wikipedia.org/wiki/Xz
 
 ## File permissions
 
-* ```$ ls -la``` displays 10 character long description (mode, permissions) of the file/directory/sym-link in question. Eg, drwx------
+* `$ ls -la` displays 10 character long description (mode, permissions) of the file/directory/sym-link in question. Eg, drwx------
 
-* ```$ chmod``` is the command to change the permissions on a file.
+* `$ chmod` is the command to change the permissions on a file.
 
  file permission meanings. Eg, chmod 744 filename:
 
@@ -66,17 +66,17 @@
 
 ### Definition: Manipluting the output of a command
 
-* ```$ 2>``` Redirection error.
-* ```$ >``` Re-direct all output into a file
-* ```$ >>``` Re-direct the output appending it to a file.
-* ```$ |``` Pipe, moving the output of a command as the input to another command
+* `$ 2>` Redirection error.
+* `$ >` Re-direct all output into a file
+* `$ >>` Re-direct the output appending it to a file.
+* `$ |` Pipe, moving the output of a command as the input to another command
 
 ## Hard and soft (symbolic) links:
 
 * Hard links can only be used within the same filesystem
-  * ```$ ln```
+  * `$ ln`
 * Soft links can be used across different file systems
-  * ```$ ln -s```
+  * `$ ln -s`
   * more visible (output of ls -l)
 
 ## Linux file system:
