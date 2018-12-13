@@ -25,7 +25,7 @@
 
 ### I was attempting to cover all previously learnt knowledge from LFCE exam with this command (plus use of `xargs`). The following command was used to open a yml file in vim file that contained the string "import database" (some stripping through the use of sed was required)
 
-* `$ fgrep -rni "import database" . | awk '/main.yml/{print $1}' | sed 's/:.*//' | xargs vim` 
+* `$ fgrep -rni "import database" . | awk '/main.yml/{print $1}' | sed 's/:.*//' | xargs vim`
 
         fgrep is used to find a string within a the current directory
         `-r` arguement is used to search recursive throughout this current directory
@@ -37,3 +37,9 @@
         sed (explained within basic-commands.md) is used to strip everything after the ':' as that wouldn't be a valid path
 
         xargs is used to pass the path into vim in this case.
+
+### How to change to another users shell
+
+#### I commonly use the following command to run commands as if I was the Jenkins user.
+
+* `$ sudo su -s /bin/bash USER` - change to the USER shell
