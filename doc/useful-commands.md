@@ -37,3 +37,9 @@
         sed (explained within basic-commands.md) is used to strip everything after the ':' as that wouldn't be a valid path
 
         xargs is used to pass the path into vim in this case.
+
+### How to change to another users shell
+
+#### I commonly use the following command to run commands as if I was the Jenkins user.
+
+* `$ sudo su -s /bin/bash USER` - change to the USER shell
