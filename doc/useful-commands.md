@@ -25,7 +25,7 @@
 
 ### I was attempting to cover all previously learnt knowledge from LFCE exam with this command (plus use of `xargs`). The following command was used to open a yml file in vim file that contained the string "import database" (some stripping through the use of sed was required)
 
-* `$ fgrep -rni "import database" . | awk '/main.yml/{print $1}' | sed 's/:.*//' | xargs vim` 
+* `$ fgrep -rni "import database" . | awk '/main.yml/{print $1}' | sed 's/:.*//' | xargs vim`
 
         fgrep is used to find a string within a the current directory
         `-r` arguement is used to search recursive throughout this current directory
