@@ -2,11 +2,12 @@
 
 ## First commands
 
-* ```$ whoami``` <- return the current `$USER`
-* ```$ cd``` <- change directory
-* ```$ ls``` <- list all of the files and directories within the current directory
-* ```$ last``` <- listed the last logged in users
-* ```$ pwd``` <- print working directoty (aka current directory from the `/`)
+* `$ whoami` <- return the current `$USER`
+* `$ cd` <- change directory
+* `$ ls` <- list all of the files and directories within the current directory
+* `$ last` <- listed the last logged in users
+* `$ pwd` <- print working directoty (aka current directory from the `/`)
+* `$ man pwd` <- description aswell as a arguements used within this command
 
 ## Domain and hostname setup
 
@@ -94,3 +95,13 @@
 * `/var` - used to store changing files. Eg, logs
 * `/usr` - contains files that are shared amongst users
 * `/proc` - the process' dir
+
+## Remote desktop and file creation
+
+* `$ ssh user@<ip/hostname>` <- remote access to a server (public key has to be within the `$USER/.ssh/authorized_keys` if wish to avoid entering password (recommended))
+* `$ cp file file1` <- copy file one into a file name file1
+* `$ rm file1` <- remove file1
+* `$ mv file file1` <- move the contain of file into a file name file1
+* `$ mkdir dir-name` <- make a directory named dir-name within the current directory
+* `$ rmdir dir-name` <- remove a dir name (empty)
+* `$ rmdir -r dir-name` <- remove all files within that directory aswell (`-r` recursively) as the directory
