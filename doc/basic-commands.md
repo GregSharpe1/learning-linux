@@ -8,6 +8,8 @@
 * `$ last` <- listed the last logged in users
 * `$ pwd` <- print working directoty (aka current directory from the `/`)
 * `$ man pwd` <- description aswell as a arguements used within this command
+* `$ cat file` <- concatanate the output of `file` (display the output of `file`)
+* `$ history` <- list all of the previous commands (commonly used in conjuction with `grep` to search the output)
 
 ## Domain and hostname setup
 
@@ -105,3 +107,23 @@
 * `$ mkdir dir-name` <- make a directory named dir-name within the current directory
 * `$ rmdir dir-name` <- remove a dir name (empty)
 * `$ rmdir -r dir-name` <- remove all files within that directory aswell (`-r` recursively) as the directory
+
+## Regular expression and grep
+
+### *Description* Regular expressions is a way of matching patterns across a string or file
+
+### Grep command is a powerful pattern searcher (`$ man grep`)
+
+* `$ grep '^e' /etc/passwd` <- search the `/etc/passwd` file for lines being with `e`
+* `$ grep -i '^e' /etc/passwd` <- search the `/etc/passwd` file for lines beginning with `e|E` `-i` will find `e` without case sensitive output (used most often)
+* `$ grep 'h$' /etc/passwd` <- search the `/etc/passwd` file for lines *ending* in `h`
+
+## Using AWK
+
+### *Description* `AWK` is a powerful processing language typically used to reformat the output of other commands [awk](https://www.gnu.org/software/gawk/manual/html_node/Very-Simple.html)
+
+* `$ awk '//{print $1 $2 $3}' file` <- extract the first three string returned from file
+* `$ awk '//{print $1, $2, $3}' file` <- extract the first three strings returned from file *with spaces*
+* `$ awk '//{print}' /etc/hosts` <- print the output of host file
+* `$ awk '/localhost/{print} /etc/hosts` <- extract the *lines* that contain localhost
+* `$ awk '/[0-9]/{print}' /etc/hosts` <- extract the *lines* containing numbers ([0-9])
