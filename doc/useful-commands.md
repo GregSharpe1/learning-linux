@@ -20,3 +20,20 @@
         Message from greg@jenkins on pts/1 at 11:42 ...
         System about to shutdown
         EOF
+
+## Using fgrep, awk, sed and xargs
+
+### I was attempting to cover all learnt knowledge with this command (plus use of `xargs`). The following command was used to open a yml in vim file that contained the string "import database"
+
+* `$ fgrep -rni "import database" . | awk '/main.yml/{print $1}' | sed 's/:.*//' | xargs vim` 
+
+        fgrep is used to find a string within a the current directory
+        `-r` arguement is used to search recursive throughout this current directory
+        `-i` argument is to ignore case when searching
+        `-n` argument is used to output the line number (didn't end up needing that one)
+
+        awk (explained within basic-commands.md) is used to print the first instance from fgrep search
+
+        sed (explained within basic-commands.md) is used to strip everything after the ':' as that wouldn't be a valid path
+
+        xargs is used to pass the path into vim in this case.
