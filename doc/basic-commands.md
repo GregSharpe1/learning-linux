@@ -6,10 +6,10 @@
 * `$ cd` - change directory
 * `$ ls` - list all of the files and directories within the current directory
 * `$ last` - listed the last logged in users
-* `$ pwd` - print working directoty (aka current directory from the `/`)
-* `$ man pwd` - description aswell as a arguements used within this command
-* `$ cat file` - concatanate the output of `file` (display the output of `file`)
-* `$ history` - list all of the previous commands (commonly used in conjuction with `grep` to search the output)
+* `$ pwd` - print working directory (aka current directory from the `/`)
+* `$ man pwd` - description as well as a arguments used within this command
+* `$ cat file` - concatenate the output of `file` (display the output of `file`)
+* `$ history` - list all of the previous commands (commonly used in conjunction with `grep` to search the output)
 
 ## Domain and hostname setup
 
@@ -19,7 +19,7 @@
 
 ## Find
 
-### definition: Command used to locate/find a file/directory within your system.
+### definition: Command used to locate/find a file/directory within your system
 
 * `$ find . -name "test"` - find the test FILE within the current directory (hence the ".")
 * `$ find dir-location -type f -empty` - find any empty files within <dir-location>
@@ -28,9 +28,9 @@
 
 ### definition: group together a set of files/directories
 
-* `$ tar czf myfiles.tar.gz filename[1-5]` - compress filename[1-5] using arguements c (create tar archieve) z (process archieve through gzip) f (file)
-* $ tar cjf myfiles.tar.bz2 filename[1-5]` - compress files using b arguemnts (using bzip2)
-* `$ tar cJf myfiles.tar.xz filename[1-5]` - compress files using b arguemnts (using LZMA compression)
+* `$ tar czf myfiles.tar.gz filename[1-5]` - compress filename[1-5] using arguments c (create tar archive) z (process archive through gzip) f (file)
+* $ tar cjf myfiles.tar.bz2 filename[1-5]` - compress files using b arguments (using bzip2)
+* `$ tar cJf myfiles.tar.xz filename[1-5]` - compress files using b arguments (using LZMA compression)
 * `$ tar tvf myfiles.tar.gz` - view what's within compressed tar.gz file
 
 ## Decompressing
@@ -56,7 +56,7 @@
     -w- = 0+2+0=2
     --x = 0+0+1=1
 
-* First number in the sequence is owner persmissions. (7)55 - Owner has complete rights
+* First number in the sequence is owner permissions. (7)55 - Owner has complete rights
 
 * Second number in the sequence is the group permissions. 7(5)5 - Group has read and execute permissions
 
@@ -64,14 +64,14 @@
 
 ## Input-output redirection
 
-### Definition: Manipluting the output of a command
+### Definition: Manipulating the output of a command
 
 * `$ 2>` Redirection error.
 * `$ >` Re-direct all output into a file
 * `$ >>` Re-direct the output appending it to a file.
 * `$ |` Pipe, moving the output of a command as the input to another command
 
-## Hard and soft (symbolic) links:
+## Hard and soft (symbolic) links
 
 * Hard links can only be used within the same filesystem
   * `$ ln`
@@ -106,7 +106,7 @@
 * `$ mv file file1` - move the contain of file into a file name file1
 * `$ mkdir dir-name` - make a directory named dir-name within the current directory
 * `$ rmdir dir-name` - remove a dir name (empty)
-* `$ rmdir -r dir-name` - remove all files within that directory aswell (`-r` recursively) as the directory
+* `$ rmdir -r dir-name` - remove all files within that directory as well (`-r` recursively) as the directory
 
 ## Regular expression and grep
 
