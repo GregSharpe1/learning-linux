@@ -1,7 +1,7 @@
 
 # Problem: First install did not have access to the web
 
-## Fix: Make sure the service is running 
+## Fix: Make sure the service is running
 
 ### ```$ service network start```
 
@@ -13,7 +13,7 @@
 
 # Problem: Keyboard wasn't set correctly
 
-## Fix: US keyboard layout (macbook)
+## Fix: US keyboard layout (Macbook)
 
 ### ```$ loadkeys us```
 
