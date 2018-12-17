@@ -43,3 +43,10 @@
 #### I commonly use the following command to run commands as if I was the Jenkins user.
 
 * `$ sudo su -s /bin/bash USER` - change to the USER shell
+
+#### To place a running task in the background use the following
+
+* `CTRL + Z`
+* `bg` - (for background) this will place the command as a job running in the background
+
+#### Once that task is running in the background, execute `fg` to bring it to the foreground to handle it. Kill it for example
